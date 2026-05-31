@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="Produk"
+                android:text="Item"
                 android:textColor="@color/text_primary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@null"
-                    android:hint="Cari data produk..."
+                    android:hint="Cari data item..."
                     android:textColor="@color/text_primary"
                     android:textColorHint="@color/text_hint"
                     android:textSize="13sp"
@@ -146,27 +146,19 @@
                     android:textSize="13sp" />
 
                 <com.google.android.material.chip.Chip
-                    android:id="@+id/cpMakanan"
+                    android:id="@+id/cpNyewa"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Makanan"
+                    android:text="Nyewa"
                     android:textSize="13sp" />
 
                 <com.google.android.material.chip.Chip
-                    android:id="@+id/cpMinuman"
+                    android:id="@+id/cpBeli"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Minuman"
-                    android:textSize="13sp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/cpSnack"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Snack"
+                    android:text="Beli"
                     android:textSize="13sp" />
 
             </com.google.android.material.chip.ChipGroup>

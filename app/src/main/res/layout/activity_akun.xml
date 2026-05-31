@@ -141,7 +141,7 @@
                         android:id="@+id/tvRole"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Admin"
+                        android:text="Profile"
                         android:textColor="@color/text_muted"
                         android:textSize="10sp"
                         android:letterSpacing="0.05" />

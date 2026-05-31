@@ -117,16 +117,12 @@ class DataProdukActivity : AppCompatActivity() {
             filterByCategory("Semua")
         }
 
-        binding.cpMakanan.setOnClickListener {
-            filterByCategory("Makanan")
+        binding.cpNyewa.setOnClickListener {
+            filterByCategory("Nyewa")
         }
 
-        binding.cpMinuman.setOnClickListener {
-            filterByCategory("Minuman")
-        }
-
-        binding.cpSnack.setOnClickListener {
-            filterByCategory("Snack")
+        binding.cpBeli.setOnClickListener {
+            filterByCategory("Beli")
         }
 
         binding.fabTambah.setOnClickListener {
@@ -196,7 +192,7 @@ class DataProdukActivity : AppCompatActivity() {
     private fun bukaEdit(produk: Produk) {
 
         val intent =
-            Intent(this, ModelProduk::class.java).apply {
+            Intent(this, model_produk::class.java).apply {
 
                 putExtra("mode", "edit")
                 putExtra("produk_id", produk.id)

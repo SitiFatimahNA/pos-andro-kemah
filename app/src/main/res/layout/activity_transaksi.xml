@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Transaksi Baru"
+                android:text="Transaksi"
                 android:textColor="@color/text_primary"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -322,7 +322,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PRODUK / LAYANAN"
+                        android:text="ITEM / LAYANAN"
                         android:textColor="@color/text_hint"
                         android:textSize="10sp"
                         android:letterSpacing="0.15"

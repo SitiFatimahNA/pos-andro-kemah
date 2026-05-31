@@ -100,25 +100,6 @@
                 android:orientation="vertical"
                 android:padding="22dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ESTIMASI HARI INI"
-                    android:textColor="@color/text_muted"
-                    android:textSize="10sp"
-                    android:letterSpacing="0.12"
-                    android:layout_marginBottom="5dp" />
-
-                <TextView
-                    android:id="@+id/tvEstimation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 0"
-                    android:textColor="@color/text_primary"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="18dp" />
-
                 <!-- Quick actions: Antrian | Pasien | Laporan -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -407,7 +388,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Layanan"
+                        android:text="Kategori"
                         android:textColor="@color/text_primary"
                         android:textSize="14sp"
                         android:textStyle="bold"
@@ -416,7 +397,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Daftar Layanan"
+                        android:text="Daftar Kategori"
                         android:textColor="@color/text_hint"
                         android:textSize="11sp"
                         android:layout_marginBottom="6dp" />
@@ -472,7 +453,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tambahan"
+                        android:text="Item"
                         android:textColor="@color/text_primary"
                         android:textSize="14sp"
                         android:textStyle="bold"
@@ -482,7 +463,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="6dp"
-                        android:text="Item Tambahan"
+                        android:text="Tambah Item"
                         android:textColor="@color/text_hint"
                         android:textSize="11sp" />
 
