@@ -38,7 +38,7 @@ Navigasi cepat ke seluruh fitur utama
 ## Tambah Kategori
 ![Tambah Kategori](screenshot/tambah_kategori.jpg)
 ## Item
-![Item](screenshot/Item.jpg)
+![Item](screenshot/item.jpg)
 ## Tambah Item
 ![Tambah Item](screenshot/tambah_item.jpg)
 ## Pegawai
