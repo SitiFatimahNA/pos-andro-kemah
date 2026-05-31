@@ -26,41 +26,41 @@ Navigasi cepat ke seluruh fitur utama
 # 📸 Screenshot
 
 ## Halaman Register
-(screenshots/register.png)
+![Halaman Register](screenshots/register.png)
 ## Login
-(screenshots/login.png)
+![Login](screenshots/login.png)
 ## Halaman Utama
-(screenshots/home.png)
+![Halaman Utama](screenshots/home.png)
 ## Akun
-(screenshots/akun.png)
-## Halaman Kategori
-(screenshots/kategori.png)
+![Akun](screenshots/akun.png)
+## Kategori
+![Kategori](screenshots/kategori.png)
 ## Tambah Kategori
-(screenshots/tambah_kategori.png)
+![Tambah Kategori](screenshots/tambah_kategori.png)
 ## Item
-(screenshots/Item.png)
+![Item](screenshots/Item.png)
 ## Tambah Item
-(screenshots/tambah_item.png)
+![Tambah Item](screenshots/tambah_item.png)
 ## Pegawai
-(screenshots/pegawai.png)
+![Pegawai](screenshots/pegawai.png)
 ## Tambah Pegawai
-(screenshots/tambah_pegawai.png)
+![Tambah Pegawai](screenshots/tambah_pegawai.png)
 ## Cabang
-(screenshots/cabang.png)
+![Cabang](screenshots/cabang.png)
 ## Tambah Cabang
-(screenshots/tambah_cabang.png)
+![Tambah Cabang](screenshots/tambah_cabang.png)
 ## Printer
-(screenshots/printer.png)
+![Printer](screenshots/printer.png)
 ## Transaksi
-(screenshots/transaksi.png)
+![Transaksi](screenshots/transaksi.png)
 ## Struk
-(screenshots/struk.png)
+![Struk](screenshots/struk.png)
 ## Pelanggan
-(screenshots/pelanggan.png)
+![Pelanggan](screenshots/pelanggan.png)
 ## Tambah Pelanggan
-(screenshots/tambah_pelanggan.png)
+![Tambah Pelanggan](screenshots/tambah_pelanggan.png)
 ## Laporan
-(screenshots/laporan.png)
+![Laporan](screenshots/laporan.png)
 
 
 
