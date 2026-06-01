@@ -25,42 +25,43 @@ Statistik sederhana usaha outdoor
 
 # 📸 Screenshot
 
-## Halaman Register
-![Halaman Register](screenshot/register.jpg)
-## Login
-![Login](screenshot/login.jpg)
-## Halaman Utama
-![Halaman Utama](screenshot/home.jpg)
-## Akun
-![Akun](screenshot/akun.jpg)
-## Kategori
-![Kategori](screenshot/kategori.jpg)
-## Tambah Kategori
-![Tambah Kategori](screenshot/tambah_kategori.jpg)
-## Item
-![Item](screenshot/item.jpg)
-## Tambah Item
-![Tambah Item](screenshot/tambah_item.jpg)
-## Pegawai
-![Pegawai](screenshot/pegawai.jpg)
-## Tambah Pegawai
-![Tambah Pegawai](screenshot/tambah_pegawai.jpg)
-## Cabang
-![Cabang](screenshot/cabang.jpg)
-## Tambah Cabang
-![Tambah Cabang](screenshot/tambah_cabang.jpg)
-## Printer
-![Printer](screenshot/printer.jpg)
-## Transaksi
-![Transaksi](screenshot/transaksi.jpg)
-## Struk
-![Struk](screenshot/struk.jpg)
-## Pelanggan
-![Pelanggan](screenshot/pelanggan.jpg)
-## Tambah Pelanggan
-![Tambah Pelanggan](screenshot/tambah_pelanggan.jpg)
-## Laporan
-![Laporan](screenshot/laporan.jpg)
+# 📸 Screenshot
+
+<p align="center">
+  <img src="screenshot/register.jpg" width="220"/>
+  <img src="screenshot/login.jpg" width="220"/>
+  <img src="screenshot/home.jpg" width="220"/>
+</p>
+
+<p align="center">
+  <img src="screenshot/akun.jpg" width="220"/>
+  <img src="screenshot/kategori.jpg" width="220"/>
+  <img src="screenshot/tambah_kategori.jpg" width="220"/>
+</p>
+
+<p align="center">
+  <img src="screenshot/item.jpg" width="220"/>
+  <img src="screenshot/tambah_item.jpg" width="220"/>
+  <img src="screenshot/pegawai.jpg" width="220"/>
+</p>
+
+<p align="center">
+  <img src="screenshot/tambah_pegawai.jpg" width="220"/>
+  <img src="screenshot/cabang.jpg" width="220"/>
+  <img src="screenshot/tambah_cabang.jpg" width="220"/>
+</p>
+
+<p align="center">
+  <img src="screenshot/printer.jpg" width="220"/>
+  <img src="screenshot/transaksi.jpg" width="220"/>
+  <img src="screenshot/struk.jpg" width="220"/>
+</p>
+
+<p align="center">
+  <img src="screenshot/pelanggan.jpg" width="220"/>
+  <img src="screenshot/tambah_pelanggan.jpg" width="220"/>
+  <img src="screenshot/laporan.jpg" width="220"/>
+</p>
 
 
 
