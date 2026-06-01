@@ -14,7 +14,7 @@ Memiliki tampilan minimalis dark mode dengan fitur transaksi, data barang, pelan
 🖨️ Pengaturan Printer
 🌙 Modern Dark Mode UI
 
-##📱 Tampilan Aplikasi
+## 📱 Tampilan Aplikasi
 
 Dashboard utama menampilkan:
 
