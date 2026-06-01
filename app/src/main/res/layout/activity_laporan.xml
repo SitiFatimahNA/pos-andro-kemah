@@ -65,7 +65,9 @@
             android:text="Harian"
             android:textSize="13sp"
             android:backgroundTint="@color/accent_gold"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/text_primary"
+            app:strokeColor="@color/accent_gold"
+            app:strokeWidth="1.5dp"
             app:cornerRadius="20dp" />
 
         <Button
@@ -75,8 +77,8 @@
             android:layout_weight="1"
             android:text="Bulanan"
             android:textSize="13sp"
-            android:backgroundTint="@color/accent_gold"
-            android:textColor="@color/text_hint"
+            app:backgroundTint="@android:color/transparent"
+            android:textColor="@color/accent_gold"
             app:cornerRadius="20dp" />
     </LinearLayout>
 

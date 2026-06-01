@@ -10,7 +10,7 @@
     <color name="text_primary">#F0EDE8</color>
     <color name="text_secondary">#8A8580</color>
     <color name="text_muted">#5A5550</color>
-    <color name="text_hint">#3A3A3E</color>
+    <color name="text_hint">#d3d3de</color>
 
     <color name="border_default">#1E1E22</color>
     <color name="border_header">#2A2A2E</color>
@@ -19,6 +19,7 @@
     <color name="accent_gold">#C9A96E</color>
     <color name="accent_gold_bg">#1E1A0E</color>
     <color name="accent_gold_border">#2E2510</color>
+    <color name="accent_gold_track">#80C8A96A</color>
 
     <color name="icon_sage">#6BAA78</color>
     <color name="icon_sage_bg">#0E1510</color>

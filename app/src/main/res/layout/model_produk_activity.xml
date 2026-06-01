@@ -74,7 +74,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Isi data produk baru"
-                        android:textColor="@color/text_muted"
+                        android:textColor="@color/text_hint"
                         android:textSize="10sp"
                         android:letterSpacing="0.05" />
                 </LinearLayout>
@@ -281,7 +281,7 @@
                     app:boxCornerRadiusBottomStart="14dp"
                     app:boxCornerRadiusBottomEnd="14dp"
                     app:boxStrokeColor="@color/border_default"
-                    app:hintTextColor="@color/text_hint">
+                    app:hintTextColor="@color/text_primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNamaProduk"
@@ -312,7 +312,7 @@
                         android:layout_height="56dp"
                         android:hint="Harga"
                         android:inputType="numberDecimal"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/text_hint"
                         android:textSize="14sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 

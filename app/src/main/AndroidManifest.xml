@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -29,6 +29,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pos">
         <activity
+            android:name=".ItemBelanjaDetail"
+            android:exported="false" />
+        <activity
+            android:name=".BsDetailTransaksi"
+            android:exported="false" />
+        <activity
+            android:name=".ItemTransaksi"
+            android:exported="false" />
+        <activity
             android:name=".LaporanActivity"
             android:exported="false" />
 
@@ -41,6 +50,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
         <activity
             android:name=".ModPelangganActivity"
             android:exported="false" />

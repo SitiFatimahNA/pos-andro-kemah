@@ -89,7 +89,7 @@
                         android:id="@+id/ivFotoProfil"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:background="@drawable/ic_laundry"
+                        android:background="@drawable/ic_kamping"
                         android:scaleType="centerCrop" />
 
                     <LinearLayout

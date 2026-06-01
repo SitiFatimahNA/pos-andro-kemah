@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/bg_card"
     android:padding="18dp"
     tools:context=".dialog_edit_profil">
 

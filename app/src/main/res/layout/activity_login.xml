@@ -44,14 +44,14 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@drawable/ic_laundry"
+                        android:src="@drawable/ic_kamping"
                         app:tint="@color/accent_gold" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LaunDry"
+                    android:text="Arah Utara"
                     android:textColor="@color/text_primary"
                     android:textSize="28sp"
                     android:textStyle="bold"

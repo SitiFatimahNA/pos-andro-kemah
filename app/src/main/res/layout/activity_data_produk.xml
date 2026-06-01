@@ -101,7 +101,7 @@
                     android:hint="Cari data item..."
                     android:textColor="@color/text_primary"
                     android:textColorHint="@color/text_hint"
-                    android:textSize="13sp"
+                    android:textSize="15sp"
                     android:inputType="text" />
 
                 <LinearLayout

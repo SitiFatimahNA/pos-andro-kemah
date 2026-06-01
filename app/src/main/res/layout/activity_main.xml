@@ -35,7 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SELAMAT SIANG"
-                    android:textColor="@color/text_muted"
+                    android:textColor="@color/text_hint"
                     android:textSize="10sp"
                     android:letterSpacing="0.15"
                     android:layout_marginBottom="4dp" />
@@ -76,7 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="08 Januari 2026"
-                    android:textColor="@color/text_muted"
+                    android:textColor="@color/text_hint"
                     android:textSize="10sp"
                     android:letterSpacing="0.05" />
             </LinearLayout>
@@ -126,7 +126,7 @@
                             <ImageView
                                 android:layout_width="18dp"
                                 android:layout_height="18dp"
-                                android:src="@drawable/ic_queue"
+                                android:src="@drawable/ic_transaction"
                                 android:contentDescription="Antrian"
                                 app:tint="@color/accent_gold" />
                         </LinearLayout>
@@ -136,7 +136,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="7dp"
                             android:text="Transaksi"
-                            android:textColor="@color/text_secondary"
+                            android:textColor="@color/text_hint"
                             android:textSize="11sp" />
                     </LinearLayout>
 
@@ -171,7 +171,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="7dp"
                             android:text="Pelanggan"
-                            android:textColor="@color/text_secondary"
+                            android:textColor="@color/text_hint"
                             android:textSize="11sp" />
                     </LinearLayout>
 
@@ -205,7 +205,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="7dp"
                             android:text="Laporan"
-                            android:textColor="@color/text_secondary"
+                            android:textColor="@color/text_hint"
                             android:textSize="11sp" />
                     </LinearLayout>
 

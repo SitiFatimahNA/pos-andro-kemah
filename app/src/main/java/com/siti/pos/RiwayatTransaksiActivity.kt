@@ -48,6 +48,9 @@ class RiwayatTransaksiActivity : AppCompatActivity() {
                 holder.itemView.findViewById<TextView>(R.id.tvTotalRiwayat).text =
                     formatter.format(t.totalHarga).replace("Rp", "Rp ").replace(",00", "")
                 holder.itemView.findViewById<TextView>(R.id.tvMetodeRiwayat).text = t.metodePembayaran
+                holder.itemView.setOnClickListener {
+                    DetailTransaksiBottomSheet(t).show(supportFragmentManager, "detail")
+                }
             }
 
             override fun getItemCount() = list.size

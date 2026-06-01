@@ -313,27 +313,29 @@
                     <Button
                         android:id="@+id/btn58mm"
                         android:layout_width="0dp"
-                        android:layout_height="48dp"
+                        android:layout_height="44dp"
                         android:layout_weight="1"
                         android:layout_marginEnd="8dp"
                         android:text="58mm"
-                        android:backgroundTint="@color/bg_coksu"
-                        app:strokeColor="#cccccc"
-                        app:strokeWidth="1dp"
-                        app:cornerRadius="24dp"
+                        android:textSize="13sp"
+                        android:backgroundTint="@color/accent_gold"
+                        android:textColor="@color/text_primary"
+                        app:cornerRadius="22dp"
+                        app:strokeWidth="0dp"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
                     <Button
                         android:id="@+id/btn80mm"
                         android:layout_width="0dp"
-                        android:layout_height="48dp"
+                        android:layout_height="44dp"
                         android:layout_weight="1"
                         android:text="80mm"
-                        android:textColor="#6B3FA0"
-                        android:backgroundTint="@color/bg_coksu"
-                        app:strokeColor="#CCCCCC"
-                        app:strokeWidth="1dp"
-                        app:cornerRadius="24dp"
+                        android:textSize="13sp"
+                        android:backgroundTint="@color/bg_card"
+                        android:textColor="@color/accent_gold"
+                        app:cornerRadius="22dp"
+                        app:strokeColor="@color/accent_gold"
+                        app:strokeWidth="1.5dp"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
                 </LinearLayout>
 
@@ -406,8 +408,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:thumbTint="#6B3FA0"
-                        android:trackTint="#D4C5F0" />
+                        android:thumbTint="@color/accent_gold"
+                        android:trackTint="@color/accent_gold_track" />
 
                 </LinearLayout>
 

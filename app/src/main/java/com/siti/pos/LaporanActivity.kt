@@ -1,10 +1,7 @@
 package com.siti.pos
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -17,6 +14,7 @@ import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 import model.ModelTransaksi
+import com.siti.pos.DetailTransaksiBottomSheet
 
 class LaporanActivity : AppCompatActivity() {
 
@@ -46,6 +44,7 @@ class LaporanActivity : AppCompatActivity() {
 
         dbHelper = DatabaseHelper(this)
         initViews()
+        updateTabStyle()
         setupListeners()
         loadLaporan()
     }
@@ -100,9 +99,10 @@ class LaporanActivity : AppCompatActivity() {
     }
 
     private fun updateTabStyle() {
-        val aktifBg = android.content.res.ColorStateList.valueOf(Color.parseColor("#6B3FA0"))
+        val aktifBg = android.content.res.ColorStateList.valueOf(
+            resources.getColor(R.color.accent_gold, theme))
         val nonAktifBg = android.content.res.ColorStateList.valueOf(
-            resources.getColor(R.color.bg_card, theme)
+            resources.getColor(R.color.accent_gold, theme)
         )
         if (isHarian) {
             btnHarian.backgroundTintList = aktifBg
@@ -194,7 +194,7 @@ class LaporanActivity : AppCompatActivity() {
             val barHeight = ((nilai.toFloat() / maxVal) * maxHeight).toInt().coerceAtLeast(4)
             val bar = View(this).apply {
                 layoutParams = LinearLayout.LayoutParams(dpToPx(16), dpToPx(barHeight))
-                setBackgroundColor(Color.parseColor("#6B3FA0"))
+                setBackgroundColor(resources.getColor(R.color.accent_gold, theme))
                 alpha = 0.8f
             }
 
@@ -252,7 +252,7 @@ class LaporanActivity : AppCompatActivity() {
             val rank = TextView(this).apply {
                 text = "${index + 1}"
                 textSize = 12f
-                setTextColor(Color.parseColor("#6B3FA0"))
+                setTextColor(resources.getColor(R.color.accent_gold, theme))
                 typeface = android.graphics.Typeface.DEFAULT_BOLD
                 layoutParams = LinearLayout.LayoutParams(dpToPx(20), LinearLayout.LayoutParams.WRAP_CONTENT)
             }
@@ -274,12 +274,19 @@ class LaporanActivity : AppCompatActivity() {
             infoRow.addView(namaTv)
             infoRow.addView(jumlahTv)
 
+            val colorGold = resources.getColor(R.color.accent_gold, theme)
+
             // Progress bar
             val progressBg = FrameLayout(this).apply {
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, dpToPx(6)
                 )
-                setBackgroundColor(Color.parseColor("#F0E8FF"))
+                val bgColor = android.graphics.Color.argb(40,   // alpha ~15%
+                    android.graphics.Color.red(colorGold),
+                    android.graphics.Color.green(colorGold),
+                    android.graphics.Color.blue(colorGold)
+                )
+                setBackgroundColor(bgColor)
             }
 
             val progressFill = View(this).apply {
@@ -287,7 +294,7 @@ class LaporanActivity : AppCompatActivity() {
                 layoutParams = FrameLayout.LayoutParams(
                     (resources.displayMetrics.widthPixels * ratio * 0.7f).toInt(), dpToPx(6)
                 )
-                setBackgroundColor(Color.parseColor("#6B3FA0"))
+                setBackgroundColor(colorGold)
             }
 
             progressBg.addView(progressFill)
@@ -323,6 +330,9 @@ class LaporanActivity : AppCompatActivity() {
                 holder.itemView.findViewById<TextView>(R.id.tvTotalRiwayat).text =
                     formatter.format(t.totalHarga).replace("Rp", "Rp ").replace(",00", "")
                 holder.itemView.findViewById<TextView>(R.id.tvMetodeRiwayat).text = t.metodePembayaran
+                holder.itemView.setOnClickListener {
+                    DetailTransaksiBottomSheet(t).show(supportFragmentManager, "detail")
+                }
             }
 
             override fun getItemCount() = list.size
@@ -330,6 +340,14 @@ class LaporanActivity : AppCompatActivity() {
 
         rvTransaksi.layoutManager = LinearLayoutManager(this)
         rvTransaksi.adapter = adapter
+
+        val divider = androidx.recyclerview.widget.DividerItemDecoration(
+            this, LinearLayoutManager.VERTICAL
+        )
+        androidx.core.content.ContextCompat.getDrawable(
+            this, R.drawable.divider_item
+        )?.let { divider.setDrawable(it) }
+        rvTransaksi.addItemDecoration(divider)
     }
 
     private fun exportLaporan() {

@@ -19,6 +19,7 @@ import adapter.BluetoothDeviceAdapter
 import java.io.OutputStream
 import java.util.UUID
 import model.ModelPrinter
+import android.annotation.SuppressLint
 
 class PrinterActivity : AppCompatActivity() {
 
@@ -147,7 +148,7 @@ class PrinterActivity : AppCompatActivity() {
         if (allGranted) scanBluetooth()
         else requestPermissionLauncher.launch(permissions)
     }
-
+    @SuppressLint("MissingPermission")
     private fun scanBluetooth() {
         if (!bluetoothAdapter.isEnabled) {
             Toast.makeText(this, "Aktifkan Bluetooth terlebih dahulu", Toast.LENGTH_SHORT).show()
@@ -165,6 +166,7 @@ class PrinterActivity : AppCompatActivity() {
         Toast.makeText(this, "${pairedDevices.size} perangkat ditemukan", Toast.LENGTH_SHORT).show()
     }
 
+    @SuppressLint("MissingPermission")
     private fun pilihPrinter(device: BluetoothDevice) {
         selectedDevice = device
         tvNamaPrinter.text = device.name ?: "Printer Bluetooth"
@@ -175,29 +177,49 @@ class PrinterActivity : AppCompatActivity() {
         Toast.makeText(this, "${device.name} dipilih", Toast.LENGTH_SHORT).show()
     }
 
+    @SuppressLint("MissingPermission")
     private fun updateTombolUkuran() {
-        val aktifBg = android.content.res.ColorStateList.valueOf(
-            android.graphics.Color.parseColor("#6B3FA0")
-        )
+        val goldColor = resources.getColor(R.color.accent_gold, theme)
+        val goldTint = android.content.res.ColorStateList.valueOf(goldColor)
+
+        // Gunakan warna bg_card bukan transparent agar button tetap terlihat
         val nonAktifBg = android.content.res.ColorStateList.valueOf(
-            android.graphics.Color.parseColor("#FFFFFF")
+            resources.getColor(R.color.bg_card, theme)
         )
-        val aktifText = android.graphics.Color.parseColor("#FFFFFF")
-        val nonAktifText = android.graphics.Color.parseColor("#6B3FA0")
+        val goldStroke = android.content.res.ColorStateList.valueOf(goldColor)
+
+        val btn58 = btn58mm as com.google.android.material.button.MaterialButton
+        val btn80 = btn80mm as com.google.android.material.button.MaterialButton
 
         if (ukuranKertas == "58mm") {
-            btn58mm.backgroundTintList = aktifBg
-            btn58mm.setTextColor(aktifText)
-            btn80mm.backgroundTintList = nonAktifBg
-            btn80mm.setTextColor(nonAktifText)
+            // 58mm AKTIF
+            btn58.backgroundTintList = goldTint
+            btn58.setTextColor(resources.getColor(R.color.text_primary, theme))
+            btn58.strokeColor = goldTint
+            btn58.strokeWidth = 0
+
+            // 80mm NON-AKTIF
+            btn80.backgroundTintList = nonAktifBg
+            btn80.setTextColor(goldColor)
+            btn80.strokeColor = goldStroke
+            btn80.strokeWidth = 3
+
         } else {
-            btn80mm.backgroundTintList = aktifBg
-            btn80mm.setTextColor(aktifText)
-            btn58mm.backgroundTintList = nonAktifBg
-            btn58mm.setTextColor(nonAktifText)
+            // 80mm AKTIF
+            btn80.backgroundTintList = goldTint
+            btn80.setTextColor(resources.getColor(R.color.text_primary, theme))
+            btn80.strokeColor = goldTint
+            btn80.strokeWidth = 0
+
+            // 58mm NON-AKTIF
+            btn58.backgroundTintList = nonAktifBg
+            btn58.setTextColor(goldColor)
+            btn58.strokeColor = goldStroke
+            btn58.strokeWidth = 3
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun simpanSetting() {
         val nama = selectedDevice?.name ?: tvNamaPrinter.text.toString()
         val mac = selectedDevice?.address ?: tvMacPrinter.text.toString()
@@ -218,6 +240,7 @@ class PrinterActivity : AppCompatActivity() {
         Toast.makeText(this, "Pengaturan berhasil disimpan", Toast.LENGTH_SHORT).show()
     }
 
+    @SuppressLint("MissingPermission")
     private fun tesCetak(macAddress: String) {
         Thread {
             try {

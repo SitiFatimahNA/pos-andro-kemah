@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -16,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvGreetingSub: TextView
     private lateinit var tvGreetingName: TextView
     private lateinit var tvDate: TextView
-    private lateinit var tvEstimation: TextView
 
     private lateinit var menuTransaksi: View
     private lateinit var menuPelanggan: View
@@ -36,7 +34,6 @@ class MainActivity : AppCompatActivity() {
 
         initViews()
         setGreetingAndDate()
-        setEstimation(0)
         setupListeners()
     }
     override fun onResume() {
@@ -50,7 +47,6 @@ class MainActivity : AppCompatActivity() {
         tvGreetingSub = findViewById(R.id.tvGreetingSub)
         tvGreetingName = findViewById(R.id.tvGreetingName)
         tvDate = findViewById(R.id.tvDate)
-        tvEstimation = findViewById(R.id.tvEstimation)
 
         menuTransaksi = findViewById(R.id.menuTransaksi)
         menuLaporan = findViewById(R.id.menuLaporan)
@@ -81,22 +77,9 @@ class MainActivity : AppCompatActivity() {
         val akunLogin = session.getAkunLogin()
         tvGreetingName.text = akunLogin.nama.ifEmpty { "Pengguna" }
 
-        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale("id", "ID"))
+        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.Builder().setLanguage("id").setRegion("ID").build())
         tvDate.text = dateFormat.format(calendar.time)
     }
-
-    private fun setEstimation(amount: Long) {
-
-        val formatter =
-            NumberFormat.getCurrencyInstance(
-                Locale("id", "ID")
-            )
-
-        tvEstimation.text = formatter.format(amount)
-            .replace("Rp", "Rp ")
-            .replace(",00", "")
-    }
-
     private fun setupListeners() {
 
         menuTransaksi.setOnClickListener {
