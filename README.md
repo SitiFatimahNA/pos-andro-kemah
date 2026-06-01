@@ -1,27 +1,27 @@
-# 🧺 POS Laundry
+# 🎒 Arah Utara 
 
-Aplikasi Point of Sale (POS) Laundry berbasis Android yang dibuat menggunakan Kotlin dan Android Studio.
-Aplikasi ini dirancang untuk membantu pengelolaan usaha laundry seperti transaksi, pelanggan, pegawai, kategori, laporan, dan manajemen cabang dengan tampilan modern dark mode.
+adalah aplikasi Android yang dibuat untuk mendukung pengelolaan usaha rental perlengkapan outdoor seperti camping dan hiking secara lebih efisien dan modern.
+Memiliki tampilan minimalis dark mode dengan fitur transaksi, data barang, pelanggan, dan laporan.
 
-## ✨ Fitur Utama
-📦 Manajemen Transaksi Laundry
-👥 Data Pelanggan
-🧑‍💼 Manajemen Pegawai
-🏷️ Kategori Laundry
+## ⛺ Fitur Utama
+🛒 Transaksi Sewa & Beli
+👥 Manajemen Pelanggan
+📦 Data Peralatan Outdoor
+🏕️ Kategori Peralatan
+👨‍💼 Manajemen Pegawai
 🧾 Laporan Pendapatan
 🏪 Multi Cabang
 🖨️ Pengaturan Printer
-👤 Profil Akun
-🌙 Modern Dark UI
+🌙 Modern Dark Mode UI
 
-##📱 Tampilan Dashboard
+##📱 Tampilan Aplikasi
 
 Dashboard utama menampilkan:
 
 Estimasi pendapatan harian
-Shortcut menu transaksi
-Statistik sederhana
-Navigasi cepat ke seluruh fitur utama
+Shortcut transaksi cepat
+Menu utama
+Statistik sederhana usaha outdoor
 
 # 📸 Screenshot
 
