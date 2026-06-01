@@ -25,8 +25,6 @@ Statistik sederhana usaha outdoor
 
 # 📸 Screenshot
 
-# 📸 Screenshot
-
 <p align="center">
   <img src="screenshot/register.jpg" width="220"/>
   <img src="screenshot/login.jpg" width="220"/>
